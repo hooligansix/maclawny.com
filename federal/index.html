@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Federal Construction Disputes | Mac Law, PLLC</title>
+<meta name="description" content="Bid protests, REAs and contract claims for veteran-owned small businesses. Fixed fees, published. Free deadline calculator.">
+<link rel="canonical" href="https://maclawny.com/federal/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230F1114'/%3E%3Cpath d='M7 24V8h3.2l5.8 9.4L21.8 8H25v16h-3.2V14l-5 8h-1.6l-5-8v10z' fill='%23F3F3EF'/%3E%3C/svg%3E">
+<meta property="og:title" content="Federal Construction Disputes | Mac Law, PLLC">
+<meta property="og:description" content="Bid protests, REAs and contract claims for veteran-owned small businesses. Fixed fees, published. Free deadline calculator.">
+<meta property="og:url" content="https://maclawny.com/federal/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#F3F3EF;
+    --sheet:#FCFCFA;
+    --ink:#0F1114;
+    --ink-2:#4B5056;
+    --ink-3:#8A9096;
+    --rule:#D6D7D0;
+    --red:#B82A1D;
+    --red-bg:#F6E5E2;
+    --f-head:"Archivo","Helvetica Neue",Arial,sans-serif;
+    --f-body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#121315;--sheet:#1A1C1F;--ink:#EAEAE5;--ink-2:#A0A5AB;--ink-3:#71777D;
+      --rule:#2C2F33;--red:#E4685B;--red-bg:#2B1A18;color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#121315;--sheet:#1A1C1F;--ink:#EAEAE5;--ink-2:#A0A5AB;--ink-3:#71777D;
+    --rule:#2C2F33;--red:#E4685B;--red-bg:#2B1A18;color-scheme:dark;
+  }
+
+  *{box-sizing:border-box}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .w{max-width:760px;margin:0 auto;padding-inline:24px}
+  p{margin:0}
+  a{color:inherit}
+  a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+  .lbl{font-family:var(--f-mono);font-size:10.5px;font-weight:500;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--ink-3)}
+
+  /* header */
+  .top{max-width:760px;margin:0 auto;padding:22px 24px 0;
+    display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .top .nm{font-family:var(--f-head);font-weight:800;font-size:15px;letter-spacing:-.01em}
+  .top a{font-family:var(--f-mono);font-size:14px;font-weight:500;text-decoration:none;
+    font-variant-numeric:tabular-nums}
+
+  /* hero */
+  .hero{padding-block:72px 44px}
+  .hero h1{font-family:var(--f-head);font-weight:800;font-size:clamp(34px,6vw,54px);
+    line-height:1.03;letter-spacing:-.025em;margin:0 0 20px;text-wrap:balance;max-width:14ch}
+  .hero .sub{font-size:18px;color:var(--ink-2);max-width:42ch}
+  .hero .cred{font-size:14.5px;color:var(--ink-3);margin-top:14px;max-width:46ch}
+
+  /* calculator */
+  .calc{background:var(--sheet);border:1px solid var(--rule);border-top:2px solid var(--ink)}
+  .calc-in{padding:18px;display:grid;grid-template-columns:1.2fr .8fr;gap:12px}
+  @media (max-width:600px){.calc-in{grid-template-columns:1fr}}
+  .fld{display:flex;flex-direction:column;gap:6px}
+  .fld select,.fld input{font-family:var(--f-mono);font-size:14px;padding:10px;
+    background:var(--ground);color:var(--ink);border:1px solid var(--rule);border-radius:0;width:100%}
+  .out{border-top:1px solid var(--rule)}
+  .out .empty{padding:16px 18px;font-size:14.5px;color:var(--ink-3)}
+  .dl{display:grid;grid-template-columns:1fr auto;gap:2px 18px;padding:13px 18px;
+    border-bottom:1px solid var(--rule)}
+  .dl:last-child{border-bottom:none}
+  .dl .what{font-size:15px;font-weight:500}
+  .dl .cite{grid-column:1;font-family:var(--f-mono);font-size:11px;color:var(--ink-3)}
+  .dl .when{grid-row:1/3;grid-column:2;text-align:right;align-self:center}
+  .dl .d{font-family:var(--f-mono);font-size:15px;font-weight:600;
+    font-variant-numeric:tabular-nums;white-space:nowrap;display:block}
+  .dl .n{font-family:var(--f-mono);font-size:10px;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--ink-3);display:block;margin-top:2px}
+  .dl.hot{background:var(--red-bg)}
+  .dl.hot .d,.dl.hot .n{color:var(--red)}
+  .calc-note{font-size:12.5px;color:var(--ink-3);margin-top:10px}
+
+  /* sections */
+  .sec{padding-block:64px 0}
+  .sec > .lbl{display:block;margin-bottom:18px}
+
+  /* fee list */
+  .fees{border-top:1px solid var(--ink)}
+  .fee{display:grid;grid-template-columns:1fr auto;gap:3px 20px;padding:14px 0;
+    border-bottom:1px solid var(--rule)}
+  .fee .nm{font-size:16px;font-weight:500}
+  .fee .pr{font-family:var(--f-mono);font-size:15px;font-weight:600;
+    font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+  .fee .ex{grid-column:1/-1;font-size:13.5px;color:var(--ink-3)}
+
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px;
+    border-top:1px solid var(--ink)}
+  @media (max-width:600px){.tiers{grid-template-columns:1fr}}
+  .tier{padding:16px 16px 16px 0;border-bottom:1px solid var(--rule)}
+  .tier + .tier{padding-left:16px;border-left:1px solid var(--rule)}
+  @media (max-width:600px){.tier + .tier{padding-left:0;border-left:none}}
+  .tier .nm{font-size:15px;font-weight:600}
+  .tier .pr{font-family:var(--f-mono);font-size:18px;font-weight:600;
+    font-variant-numeric:tabular-nums;margin:4px 0 6px}
+  .tier .pr span{font-size:11px;font-weight:400;color:var(--ink-3)}
+  .tier p{font-size:13.5px;color:var(--ink-2)}
+
+  /* conflict */
+  .cf p{font-size:16px;max-width:58ch}
+  .cf p + p{margin-top:12px}
+  .cf .fac{font-family:var(--f-mono);font-size:12px;line-height:1.8;color:var(--ink-3);margin-top:16px}
+
+  /* contact */
+  .ct{display:grid;grid-template-columns:repeat(3,auto);gap:10px 44px;justify-content:start}
+  @media (max-width:600px){.ct{grid-template-columns:1fr}}
+  .ct a,.ct span.v{font-family:var(--f-mono);font-size:15px;font-weight:500;text-decoration:none;display:block;margin-top:4px}
+
+  /* intake */
+  .dlbtn{display:inline-flex;align-items:center;gap:12px;font-family:var(--f-mono);font-size:14px;
+    font-weight:600;text-decoration:none;border:1px solid var(--ink);padding:12px 18px;
+    background:var(--sheet);color:var(--ink)}
+  .dlbtn::after{content:"\2193";font-weight:400}
+  .dlbtn:hover{background:var(--ink);color:var(--sheet)}
+  .dlnote{font-size:14px;color:var(--ink-3);margin-top:12px;max-width:52ch}
+
+  /* footer */
+  footer{max-width:760px;margin:80px auto 0;padding:22px 24px 36px;border-top:1px solid var(--rule)}
+  footer p{font-size:12px;line-height:1.6;color:var(--ink-3)}
+  footer p + p{margin-top:8px}
+
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <a class="nm" href="/" style="text-decoration:none">Mac Law</a>
+  <a href="tel:+15183391209">(518) 339-1209</a>
+</header>
+
+<main class="w">
+  <div class="hero">
+    <h1>Federal construction disputes.</h1>
+    <p class="sub">Protests, REAs and claims for veteran-owned small businesses. Fixed fees, listed below.</p>
+    <p class="cred">I've run an SDVOSB on VA hospital work since 2008.</p>
+  </div>
+
+  <div class="calc">
+    <div class="calc-in">
+      <div class="fld">
+        <label class="lbl" for="evt">What happened</label>
+        <select id="evt">
+          <option value="debrief">Required debriefing</option>
+          <option value="award">Award notice, no debriefing</option>
+          <option value="solicit">Defect in the solicitation</option>
+          <option value="apparent">Notice of apparent awardee</option>
+          <option value="cofd">Contracting officer's final decision</option>
+          <option value="cure">Cure notice or show cause</option>
+        </select>
+      </div>
+      <div class="fld">
+        <label class="lbl" for="dt">Date</label>
+        <input type="date" id="dt">
+      </div>
+    </div>
+    <div class="out" id="out" role="status" aria-live="polite"></div>
+  </div>
+  <p class="calc-note">A planning aid. Weekends and federal holidays roll forward. Confirm every date.</p>
+
+  <div class="sec">
+    <span class="lbl">Fees</span>
+    <div class="fees">
+      <div class="fee"><span class="nm">Protest viability screen</span><span class="pr">$950</span>
+        <span class="ex">Written answer in 48 hours. Excludes filing.</span></div>
+      <div class="fee"><span class="nm">Agency-level protest</span><span class="pr">$7,500</span>
+        <span class="ex">Half credited toward a later GAO protest.</span></div>
+      <div class="fee"><span class="nm">GAO protest</span><span class="pr">$18,500</span>
+        <span class="ex">Through comments. Excludes supplemental grounds, hearing, COFC, and the $500 GAO fee.</span></div>
+      <div class="fee"><span class="nm">Size or status protest defense</span><span class="pr">$9,500</span>
+        <span class="ex">Excludes OHA appeal.</span></div>
+      <div class="fee"><span class="nm">Cure notice response</span><span class="pr">$4,500</span>
+        <span class="ex">Within 72 hours. Excludes termination appeal.</span></div>
+      <div class="fee"><span class="nm">Request for equitable adjustment</span><span class="pr">$14,500–38,000</span>
+        <span class="ex">By claim size. Excludes claim certification and appeal.</span></div>
+      <div class="fee"><span class="nm">CDA claim certification</span><span class="pr">$11,500</span>
+        <span class="ex">Through the final decision. Excludes appeal.</span></div>
+      <div class="fee"><span class="nm">ASBCA or CBCA appeal</span><span class="pr">$45,000</span>
+        <span class="ex">Through hearing. Excludes Federal Circuit.</span></div>
+      <div class="fee"><span class="nm">VetCert recertification review</span><span class="pr">$1,500</span>
+        <span class="ex">Excludes OHA appeal.</span></div>
+      <div class="fee"><span class="nm">SDVOSB joint venture agreement</span><span class="pr">$7,500</span>
+        <span class="ex">New York matters. Excludes entity formation.</span></div>
+    </div>
+
+    <div class="tiers">
+      <div class="tier"><div class="nm">Watch</div><div class="pr">$650<span> /mo</span></div>
+        <p>Clause reviews and VetCert tracking.</p></div>
+      <div class="tier"><div class="nm">Counsel</div><div class="pr">$1,850<span> /mo</span></div>
+        <p>Adds email counsel and a quarterly protest screen.</p></div>
+      <div class="tier"><div class="nm">Outside GC</div><div class="pr">$4,500<span> /mo</span></div>
+        <p>Adds teaming, JV and subcontract review.</p></div>
+    </div>
+  </div>
+
+  <div class="sec cf">
+    <span class="lbl">Conflicts</span>
+    <p>I don't take matters in VISN 2. I own a construction company that bids VA work in New York and New Jersey.</p>
+    <p>Every other VISN, the Corps of Engineers, NAVFAC and the civilian agencies are open.</p>
+    <p class="fac">Bronx · NY Harbor · Northport · Hudson Valley · Albany · Syracuse · Buffalo · Bath · Canandaigua · New Jersey</p>
+  </div>
+
+  <div class="sec">
+    <span class="lbl">Start a matter</span>
+    <a class="dlbtn" href="Mac-Law-Matter-Intake.pdf" download>Intake form (PDF)</a>
+    <p class="dlnote">Five minutes. Fill it in and email it back. Leave out pricing — I check conflicts first.</p>
+  </div>
+
+  <div class="sec">
+    <span class="lbl">Contact</span>
+    <div class="ct">
+      <div><span class="lbl">Phone</span><a href="tel:+15183391209">(518) 339-1209</a></div>
+      <div><span class="lbl">Email</span><a href="mailto:Mseeber@maclawny.com">Mseeber@maclawny.com</a></div>
+      <div><span class="lbl">Mail</span><span class="v">P.O. Box 13, Mamaroneck, NY 10543</span></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Attorney Advertising. Mac Law, PLLC · Matthew Seeber, admitted in New York. Practice before GAO, the boards of contract appeals and federal agencies nationwide; other states' law is handled with local counsel.</p>
+  <p>Each fee covers the scope stated. Filing fees and disbursements are extra. Engagements are confirmed in writing before work begins.</p>
+  <p>Not legal advice. No attorney-client relationship exists until an engagement letter is signed. Prior results do not guarantee a similar outcome.</p>
+</footer>
+
+<script>
+(function(){
+  var evt=document.getElementById('evt'),dt=document.getElementById('dt'),out=document.getElementById('out');
+  var HOL={'2026-01-01':1,'2026-01-19':1,'2026-02-16':1,'2026-05-25':1,'2026-06-19':1,'2026-07-03':1,
+    '2026-09-07':1,'2026-10-12':1,'2026-11-11':1,'2026-11-26':1,'2026-12-25':1,
+    '2027-01-01':1,'2027-01-18':1,'2027-02-15':1,'2027-05-31':1,'2027-06-18':1,'2027-07-05':1,
+    '2027-09-06':1,'2027-10-11':1,'2027-11-11':1,'2027-11-25':1,'2027-12-24':1};
+  function k(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  function biz(d){var w=d.getDay();return w!==0&&w!==6&&!HOL[k(d)];}
+  function roll(d){var x=new Date(d);while(!biz(x))x.setDate(x.getDate()+1);return x;}
+  function cal(d,n){var x=new Date(d);x.setDate(x.getDate()+n);return roll(x);}
+  function bd(d,n){var x=new Date(d),c=0;while(c<n){x.setDate(x.getDate()+1);if(biz(x))c++;}return x;}
+  function mo(d,n){var x=new Date(d);x.setMonth(x.getMonth()+n);return roll(x);}
+  function fmt(d){return d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',year:'numeric'});}
+  function left(d){var t=new Date();t.setHours(0,0,0,0);var x=new Date(d);x.setHours(0,0,0,0);return Math.round((x-t)/864e5);}
+
+  function row(o){
+    var n=left(o.date),lab=n<0?'passed':n===0?'today':n+(n===1?' day':' days');
+    var el=document.createElement('div');
+    el.className='dl'+((o.hot||n<=5)?' hot':'');
+    el.innerHTML='<span class="what">'+o.what+'</span><span class="when"><span class="d">'+fmt(o.date)+
+      '</span><span class="n">'+lab+'</span></span><span class="cite">'+o.cite+'</span>';
+    return el;
+  }
+
+  function render(){
+    out.innerHTML='';
+    if(!dt.value){out.innerHTML='<div class="empty">Pick a date to see your deadlines.</div>';return;}
+    var a=dt.value.split('-'),b=new Date(+a[0],+a[1]-1,+a[2]),r=[];
+    switch(evt.value){
+      case 'debrief':
+        r.push({what:'GAO protest',cite:'10 days · 4 C.F.R. 21.2(a)(2)',date:cal(b,10)});
+        r.push({what:'Filed by here to keep the stay',cite:'5 days · 31 U.S.C. 3553(d)',date:cal(b,5),hot:true});
+        r.push({what:'DoD debriefing questions',cite:'2 business days · or the stay clock won’t extend',date:bd(b,2),hot:true});
+        break;
+      case 'award':
+        r.push({what:'GAO protest',cite:'10 days from when you knew',date:cal(b,10)});
+        r.push({what:'Filed by here to keep the stay',cite:'10 days from award · 31 U.S.C. 3553(d)',date:cal(b,10),hot:true});
+        break;
+      case 'solicit':
+        r.push({what:'Protest before bids open',cite:'4 C.F.R. 21.2(a)(1)',date:b,hot:true});
+        break;
+      case 'apparent':
+        r.push({what:'Size or status protest',cite:'5 business days · VA status protests go to VA OSDBU',date:bd(b,5),hot:true});
+        break;
+      case 'cofd':
+        r.push({what:'ASBCA or CBCA appeal',cite:'90 days · 41 U.S.C. 7104(a)',date:cal(b,90)});
+        r.push({what:'Court of Federal Claims',cite:'12 months · 41 U.S.C. 7104(b)(3)',date:mo(b,12)});
+        break;
+      case 'cure':
+        r.push({what:'Cure notice response',cite:'Usually 10 days — the notice governs · FAR 52.249-8',date:cal(b,10),hot:true});
+        break;
+    }
+    r.forEach(function(x){out.appendChild(row(x));});
+  }
+  evt.addEventListener('change',render);dt.addEventListener('change',render);dt.addEventListener('input',render);
+  render();
+})();
+</script>
+
+</body>
+</html>
