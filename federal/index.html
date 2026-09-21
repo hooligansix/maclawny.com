@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Federal Construction Contracts | Mac Law, PLLC</title>
-<meta name="description" content="Bid protests, requests for equitable adjustment and Contract Disputes Act claims for veteran-owned construction firms. Published flat fees and a free deadline calculator.">
+<meta name="description" content="Bid protests, requests for equitable adjustment and Contract Disputes Act claims for veteran-owned construction contractors. Published flat fees and a deadline calculator.">
 <link rel="canonical" href="https://maclawny.com/federal/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316233C'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23F7F5F0' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <meta property="og:title" content="Federal Construction Contracts | Mac Law, PLLC">
-<meta property="og:description" content="Bid protests, requests for equitable adjustment and Contract Disputes Act claims for veteran-owned construction firms. Published flat fees and a free deadline calculator.">
+<meta property="og:description" content="Bid protests, requests for equitable adjustment and Contract Disputes Act claims for veteran-owned construction contractors. Published flat fees and a deadline calculator.">
 <meta property="og:url" content="https://maclawny.com/federal/">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap">
@@ -23,7 +23,7 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);
   font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--navy)}
 a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
 .w{max-width:1080px;margin:0 auto;padding-inline:28px}
@@ -40,16 +40,13 @@ p{margin:0}
 .small{font-size:14.5px}
 
 /* header */
-.topbar{background:var(--navy);color:#CBD3E2;font-size:12.5px;letter-spacing:.06em}
-.topbar .w{display:flex;justify-content:space-between;gap:16px;padding-block:8px;text-transform:uppercase}
-.topbar a{color:#fff;text-decoration:none}
-header.site{background:var(--paper);border-bottom:1px solid var(--rule)}
-header.site .w{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:20px;flex-wrap:wrap}
-.brand{text-decoration:none;display:block}
-.brand .name{font-family:var(--serif);font-size:25px;font-weight:700;color:var(--navy);
-  letter-spacing:.02em;line-height:1}
-.brand .sub{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-nav.main{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+header.site{background:var(--paper);border-top:3px solid var(--navy);border-bottom:1px solid var(--rule)}
+header.site .w{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px;flex-wrap:wrap}
+.brand{text-decoration:none;display:flex;align-items:baseline;gap:9px}
+.brand .name{font-family:var(--serif);font-size:27px;font-weight:600;color:var(--navy);letter-spacing:-.005em;line-height:1}
+.brand .sub{font-size:10.5px;font-weight:600;letter-spacing:.22em;color:var(--brass)}
+nav.main{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+nav.main a.tel{color:var(--navy);font-weight:500;padding-left:22px;border-left:1px solid var(--rule);border-bottom:0}
 nav.main a{font-size:14.5px;color:#39414F;text-decoration:none;padding-block:4px;border-bottom:1px solid transparent}
 nav.main a:hover{border-bottom-color:var(--brass);color:var(--navy)}
 nav.main a.cta{border:1px solid var(--navy);border-radius:2px;padding:9px 16px;color:var(--navy);font-weight:500}
@@ -58,7 +55,7 @@ nav.main a.cta:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
 /* hero */
 .hero{padding-block:clamp(52px,7vw,86px) clamp(40px,5vw,62px);border-bottom:1px solid var(--rule)}
 .hero .eyebrow{display:block;margin-bottom:18px}
-.hero h1{max-width:19ch}
+.hero h1{max-width:30ch}
 .hero .lede{margin-top:22px;max-width:60ch}
 .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
 .btn{display:inline-block;text-decoration:none;font-size:15px;font-weight:500;padding:13px 24px;border-radius:2px}
@@ -95,10 +92,11 @@ section{padding-block:clamp(46px,6vw,74px)}
 .attorney .eyebrow{color:#C3A86E}
 .attorney p{color:#C9D0DE;margin-top:16px}
 .attorney .portrait{border:1px solid rgba(255,255,255,.14)}
-.creds{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);
-  display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;font-size:14.5px;color:#C9D0DE}
-.creds div{display:flex;gap:10px}
-.creds span{color:#C3A86E}
+.creds{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px 28px}
+.creds h4{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:#C3A86E;margin-bottom:8px}
+.attorney .creds p{margin:0;font-size:14.5px;line-height:1.7;color:#C9D0DE}
 @media(max-width:760px){.attorney .w{grid-template-columns:1fr}.attorney .portrait{max-width:260px}
   .creds{grid-template-columns:1fr}}
 
@@ -172,42 +170,37 @@ footer a{color:#D5DBE7}
 
 /* compact header on phones */
 @media(max-width:700px){
-  .topbar .w{justify-content:center}
-  .topbar .lead{display:none}
-  header.site .w{gap:14px;padding-block:16px}
+  header.site .w{gap:12px;padding-block:16px}
+  nav.main a.tel,nav.main .nx{display:none}
+  nav.main a.cta{border:0;padding:4px 0;margin-left:0;font-weight:500}
   nav.main{gap:16px;width:100%;font-size:13.5px}
   nav.main a{font-size:13.5px}
-  nav.main a.cta{padding:8px 14px;margin-left:auto}
   .hero{padding-block:44px 34px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="w">
-  <span class="lead">Mac Law, PLLC &middot; Mamaroneck, New York</span>
-  <span><a href="tel:+15183391209">(518) 339-1209</a></span>
-</div></div>
 <header class="site"><div class="w">
-  <a class="brand" href="/">
-    <div class="name">MAC LAW</div>
-    <div class="sub">Attorneys at Law &middot; PLLC</div>
+  <a class="brand" href="/" aria-label="Mac Law, PLLC home">
+    <span class="name">Mac Law</span><span class="sub">PLLC</span>
   </a>
   <nav class="main">
-    <a href="/#practice">Practice areas</a>
-    <a href="/federal/" style="border-bottom-color:var(--brass);color:var(--navy)">Federal construction</a>
-    <a href="/federal/fees/">Fee schedule</a>
-    <a href="/#attorney">Attorney</a>
+    <a href="/#practice">Practice</a>
+    <a href="/federal/" style="border-bottom-color:var(--brass);color:var(--navy)">Federal<span class="nx"> contracts</span></a>
+    <a href="/federal/fees/">Fees</a>
+    <a href="/#about">About</a>
+    <a class="tel" href="tel:+15183391209">(518) 339-1209</a>
     <a class="cta" href="/#contact">Contact</a>
   </nav>
 </div></header>
 <main>
   <div class="hero"><div class="w">
     <span class="eyebrow">Federal construction contracts</span>
-    <h1>Protests, REAs and claims for veteran-owned builders.</h1>
-    <p class="lede">When an award goes the wrong way, a contracting officer denies a change, or a cure notice arrives,
-      the clock is already running. This practice handles those matters on published flat fees, for contractors working
-      at VA medical centers, the Corps of Engineers, NAVFAC and the civilian agencies.</p>
+    <h1>Bid protests, REAs and claims for veteran-owned contractors</h1>
+    <p class="lede">The firm represents construction contractors in award protests, eligibility matters and contract
+      claims involving VA, the Corps of Engineers, NAVFAC and civilian agencies. Federal matters are billed at published
+      flat fees.</p>
     <div class="actions">
       <a class="btn solid" href="tel:+15183391209">Call (518) 339-1209</a>
       <a class="btn ghost" href="/federal/fees/">Fee schedule</a>
@@ -215,23 +208,23 @@ footer a{color:#D5DBE7}
   </div></div>
 
   <div class="strip"><div class="w">
-    <div class="item"><b>SDVOSB owner</b>Federal construction since 2008</div>
-    <div class="item"><b>VA work</b>Medical center projects in the NY region</div>
+    <div class="item"><b>Flat fees</b>Set in writing before work begins</div>
+    <div class="item"><b>Deadlines</b>Calculator below</div>
     <div class="item"><b>Forums</b>GAO, ASBCA, CBCA, agency level</div>
-    <div class="item"><b>Response</b>Same-day on deadline matters</div>
+    <div class="item"><b>Response</b>Same day on deadline matters</div>
   </div></div>
 
   <section><div class="w">
     <div class="sec-head">
       <span class="eyebrow">Scope</span>
-      <h2>What the practice handles</h2>
+      <h2>Services</h2>
     </div>
     <div class="cards">
       <div class="card">
         <h3>Award and eligibility</h3>
         <ul>
           <li>Pre-award and post-award bid protests at the agency level and at GAO</li>
-          <li>Size and status protests, defense and prosecution, including VA OSDBU referrals</li>
+          <li>Size and status protests, filed or defended, before the SBA area office and OHA</li>
           <li>VetCert applications, recertification and eligibility review under 13 C.F.R. Part 128</li>
           <li>SDVOSB joint ventures and teaming agreements, including the 40 percent work requirement</li>
         </ul>
@@ -251,10 +244,9 @@ footer a{color:#D5DBE7}
   <section style="padding-top:0"><div class="w">
     <div class="sec-head">
       <span class="eyebrow">Deadline calculator</span>
-      <h2>Know the date before you call</h2>
-      <p>Enter what happened and when. The tool applies the filing periods that most often control, rolling weekends
-         and federal holidays forward. It is a planning aid, not advice &mdash; confirm every date against the
-         solicitation and the governing regulation.</p>
+      <h2>Protest and claim deadlines</h2>
+      <p>Select the event and the date. Deadlines that fall on a weekend or federal holiday move to the next business
+         day. Check each date against the solicitation and the governing regulation.</p>
     </div>
     <div class="calc">
       <div class="calc-in">
@@ -281,21 +273,21 @@ footer a{color:#D5DBE7}
   <section style="padding-top:0"><div class="w">
     <div class="cards">
       <div class="card">
-        <h3>How engagements run</h3>
+        <h3>Engagement terms</h3>
         <ul>
-          <li>Conflicts are cleared before any confidential detail is discussed.</li>
-          <li>Scope and a flat fee are set in a written engagement letter before work begins.</li>
-          <li>Filing fees and disbursements &mdash; including the $500 GAO filing fee &mdash; are billed at cost.</li>
-          <li>You work with me directly. Nothing is handed to an associate you have not met.</li>
+          <li>Conflicts are cleared before the firm reviews confidential information.</li>
+          <li>Scope and fee are set out in a written engagement letter before work begins.</li>
+          <li>Filing fees and costs, including the $500 GAO filing fee, are billed at cost.</li>
+          <li>The same attorney handles the matter from intake through decision.</li>
         </ul>
       </div>
       <div class="card">
-        <h3>Before you send documents</h3>
+        <h3>Before contacting the firm</h3>
         <ul>
-          <li>Note the exact date and time of the debriefing, award notice or final decision.</li>
-          <li>Keep your pricing and proposal content out of the first message.</li>
-          <li>Have the solicitation number, contract number and modification log at hand.</li>
-          <li>If a deadline falls inside five days, call rather than email.</li>
+          <li>Note the date and time of the debriefing, award notice or final decision.</li>
+          <li>Do not include pricing or proposal content in your first message.</li>
+          <li>Have the solicitation number, contract number and modification history available.</li>
+          <li>If a deadline is within five days, call instead of emailing.</li>
         </ul>
       </div>
     </div>
@@ -303,12 +295,11 @@ footer a{color:#D5DBE7}
 
   <section style="padding-top:0"><div class="w narrow">
     <div class="panel">
-      <span class="eyebrow">Conflicts of interest</span>
-      <h3 style="margin-top:10px;font-size:22px">No matters in VISN 2</h3>
-      <p style="margin-top:12px;color:#4A525F">I own a construction company that bids federal work at VA facilities in
-        New York and New Jersey. I therefore decline every matter involving a VISN 2 facility, without exception, rather
-        than paper over a conflict with a waiver. Every other VISN, the Corps of Engineers, NAVFAC and the civilian
-        agencies are open, subject to a routine conflicts check.</p>
+      <span class="eyebrow">Limitation</span>
+      <h3 style="margin-top:10px;font-size:22px">VISN 2 matters</h3>
+      <p style="margin-top:12px;color:#4A525F">The firm does not accept matters involving VA facilities in VISN 2 (New York
+        and New Jersey). Matters in other VISNs and before the Corps of Engineers, NAVFAC and civilian agencies are
+        accepted subject to a conflicts check.</p>
       <p class="facilities">Bronx &middot; NY Harbor &middot; Northport &middot; Hudson Valley &middot; Albany &middot;
         Syracuse &middot; Buffalo &middot; Bath &middot; Canandaigua &middot; New Jersey</p>
     </div>
@@ -319,8 +310,8 @@ footer a{color:#D5DBE7}
       <div class="txt">
         <span class="eyebrow">Start a matter</span>
         <h3 style="margin-top:10px;font-size:22px">Intake form</h3>
-        <p>A one-page fillable PDF: the solicitation, your company, what happened and when. About five minutes.
-           Fill it in and email it back, and leave pricing out until conflicts are cleared.</p>
+        <p>One-page fillable PDF. Complete it and email it to the firm. Leave out pricing until conflicts are
+           cleared.</p>
       </div>
       <a class="btn solid" href="Mac-Law-Matter-Intake.pdf" download>Download the intake form</a>
     </div>
@@ -329,7 +320,7 @@ footer a{color:#D5DBE7}
   <section style="padding-top:0" id="contact"><div class="w">
     <div class="contact">
       <div><div class="lbl">Telephone</div><a class="val" href="tel:+15183391209">(518) 339-1209</a></div>
-      <div><div class="lbl">Email</div><a class="val" href="mailto:Mseeber@maclawny.com">Mseeber@maclawny.com</a></div>
+      <div><div class="lbl">Email</div><a class="val" href="mailto:info@maclawny.com">info@maclawny.com</a></div>
       <div><div class="lbl">Mail</div><span class="val">P.O. Box 13<br>Mamaroneck, NY 10543</span></div>
     </div>
   </div></section>
@@ -340,14 +331,14 @@ footer a{color:#D5DBE7}
     <a href="/federal/">Federal construction</a>
     <a href="/federal/fees/">Fee schedule</a>
     <a href="/federal/Mac-Law-Matter-Intake.pdf">Intake form (PDF)</a>
-    <a href="mailto:Mseeber@maclawny.com">Mseeber@maclawny.com</a>
+    <a href="mailto:info@maclawny.com">info@maclawny.com</a>
     <a href="tel:+15183391209">(518) 339-1209</a>
   </div>
   <p><strong style="color:#D5DBE7">Attorney Advertising.</strong> Mac Law, PLLC &middot; Matthew Seeber, admitted in New York &middot;
-     P.O. Box 13, Mamaroneck, NY 10543. Practice before the Government Accountability Office, the boards of contract appeals
-     and federal agencies nationwide; matters governed by other states' law are handled with local counsel.</p>
-  <p>This website is for general information. It is not legal advice, and no attorney-client relationship is formed by
-     sending an inquiry or an intake form. Representation begins only when a written engagement letter is signed by both of us.
+     P.O. Box 13, Mamaroneck, NY 10543 &middot; (518) 339-1209. Federal matters are handled before GAO, the boards of
+     contract appeals and federal agencies. Matters governed by the law of another state are handled with local counsel.</p>
+  <p>This website provides general information, not legal advice. Contacting the firm or sending an intake form does not
+     create an attorney-client relationship. Representation begins when a written engagement letter is signed.
      Prior results do not guarantee a similar outcome.</p>
   <p>&copy; 2026 Mac Law, PLLC. All rights reserved.</p>
 </div></footer>
@@ -378,7 +369,7 @@ footer a{color:#D5DBE7}
   }
   function render(){
     out.innerHTML='';
-    if(!dt.value){out.innerHTML='<div class="empty">Choose what happened and the date it happened, and the governing deadlines appear here.</div>';return;}
+    if(!dt.value){out.innerHTML='<div class="empty">Select an event and a date to see the deadlines.</div>';return;}
     var a=dt.value.split('-'),b=new Date(+a[0],+a[1]-1,+a[2]),r=[];
     switch(evt.value){
       case 'debrief':
@@ -394,14 +385,14 @@ footer a{color:#D5DBE7}
         r.push({what:'Protest before the time set for receipt of proposals',cite:'4 C.F.R. \u00a7 21.2(a)(1)',date:b,hot:true});
         break;
       case 'apparent':
-        r.push({what:'Size or status protest',cite:'5 business days \u00b7 VA status protests go to VA OSDBU',date:bd(b,5),hot:true});
+        r.push({what:'Size or status protest',cite:'5 business days \u00b7 decided by SBA (size) or OHA (status)',date:bd(b,5),hot:true});
         break;
       case 'cofd':
         r.push({what:'Appeal to the ASBCA or CBCA',cite:'90 days \u00b7 41 U.S.C. \u00a7 7104(a)',date:cal(b,90)});
         r.push({what:'Suit in the Court of Federal Claims',cite:'12 months \u00b7 41 U.S.C. \u00a7 7104(b)(3)',date:mo(b,12)});
         break;
       case 'cure':
-        r.push({what:'Cure notice response',cite:'Usually 10 days \u2014 the notice governs \u00b7 FAR 52.249-8',date:cal(b,10),hot:true});
+        r.push({what:'Cure notice response',cite:'Usually 10 days; the notice controls \u00b7 FAR 52.249-8',date:cal(b,10),hot:true});
         break;
     }
     r.forEach(function(x){out.appendChild(row(x));});
