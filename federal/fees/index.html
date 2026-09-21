@@ -23,7 +23,7 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);
   font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--navy)}
 a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
 .w{max-width:1080px;margin:0 auto;padding-inline:28px}
@@ -40,16 +40,13 @@ p{margin:0}
 .small{font-size:14.5px}
 
 /* header */
-.topbar{background:var(--navy);color:#CBD3E2;font-size:12.5px;letter-spacing:.06em}
-.topbar .w{display:flex;justify-content:space-between;gap:16px;padding-block:8px;text-transform:uppercase}
-.topbar a{color:#fff;text-decoration:none}
-header.site{background:var(--paper);border-bottom:1px solid var(--rule)}
-header.site .w{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:20px;flex-wrap:wrap}
-.brand{text-decoration:none;display:block}
-.brand .name{font-family:var(--serif);font-size:25px;font-weight:700;color:var(--navy);
-  letter-spacing:.02em;line-height:1}
-.brand .sub{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-nav.main{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+header.site{background:var(--paper);border-top:3px solid var(--navy);border-bottom:1px solid var(--rule)}
+header.site .w{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px;flex-wrap:wrap}
+.brand{text-decoration:none;display:flex;align-items:baseline;gap:9px}
+.brand .name{font-family:var(--serif);font-size:27px;font-weight:600;color:var(--navy);letter-spacing:-.005em;line-height:1}
+.brand .sub{font-size:10.5px;font-weight:600;letter-spacing:.22em;color:var(--brass)}
+nav.main{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+nav.main a.tel{color:var(--navy);font-weight:500;padding-left:22px;border-left:1px solid var(--rule);border-bottom:0}
 nav.main a{font-size:14.5px;color:#39414F;text-decoration:none;padding-block:4px;border-bottom:1px solid transparent}
 nav.main a:hover{border-bottom-color:var(--brass);color:var(--navy)}
 nav.main a.cta{border:1px solid var(--navy);border-radius:2px;padding:9px 16px;color:var(--navy);font-weight:500}
@@ -58,7 +55,7 @@ nav.main a.cta:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
 /* hero */
 .hero{padding-block:clamp(52px,7vw,86px) clamp(40px,5vw,62px);border-bottom:1px solid var(--rule)}
 .hero .eyebrow{display:block;margin-bottom:18px}
-.hero h1{max-width:19ch}
+.hero h1{max-width:30ch}
 .hero .lede{margin-top:22px;max-width:60ch}
 .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
 .btn{display:inline-block;text-decoration:none;font-size:15px;font-weight:500;padding:13px 24px;border-radius:2px}
@@ -95,10 +92,11 @@ section{padding-block:clamp(46px,6vw,74px)}
 .attorney .eyebrow{color:#C3A86E}
 .attorney p{color:#C9D0DE;margin-top:16px}
 .attorney .portrait{border:1px solid rgba(255,255,255,.14)}
-.creds{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);
-  display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;font-size:14.5px;color:#C9D0DE}
-.creds div{display:flex;gap:10px}
-.creds span{color:#C3A86E}
+.creds{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px 28px}
+.creds h4{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:#C3A86E;margin-bottom:8px}
+.attorney .creds p{margin:0;font-size:14.5px;line-height:1.7;color:#C9D0DE}
 @media(max-width:760px){.attorney .w{grid-template-columns:1fr}.attorney .portrait{max-width:260px}
   .creds{grid-template-columns:1fr}}
 
@@ -172,99 +170,92 @@ footer a{color:#D5DBE7}
 
 /* compact header on phones */
 @media(max-width:700px){
-  .topbar .w{justify-content:center}
-  .topbar .lead{display:none}
-  header.site .w{gap:14px;padding-block:16px}
+  header.site .w{gap:12px;padding-block:16px}
+  nav.main a.tel,nav.main .nx{display:none}
+  nav.main a.cta{border:0;padding:4px 0;margin-left:0;font-weight:500}
   nav.main{gap:16px;width:100%;font-size:13.5px}
   nav.main a{font-size:13.5px}
-  nav.main a.cta{padding:8px 14px;margin-left:auto}
   .hero{padding-block:44px 34px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="w">
-  <span class="lead">Mac Law, PLLC &middot; Mamaroneck, New York</span>
-  <span><a href="tel:+15183391209">(518) 339-1209</a></span>
-</div></div>
 <header class="site"><div class="w">
-  <a class="brand" href="/">
-    <div class="name">MAC LAW</div>
-    <div class="sub">Attorneys at Law &middot; PLLC</div>
+  <a class="brand" href="/" aria-label="Mac Law, PLLC home">
+    <span class="name">Mac Law</span><span class="sub">PLLC</span>
   </a>
   <nav class="main">
-    <a href="/#practice">Practice areas</a>
-    <a href="/federal/">Federal construction</a>
-    <a href="/federal/fees/" style="border-bottom-color:var(--brass);color:var(--navy)">Fee schedule</a>
-    <a href="/#attorney">Attorney</a>
+    <a href="/#practice">Practice</a>
+    <a href="/federal/">Federal<span class="nx"> contracts</span></a>
+    <a href="/federal/fees/" style="border-bottom-color:var(--brass);color:var(--navy)">Fees</a>
+    <a href="/#about">About</a>
+    <a class="tel" href="tel:+15183391209">(518) 339-1209</a>
     <a class="cta" href="/#contact">Contact</a>
   </nav>
 </div></header>
 <main>
   <div class="hero"><div class="w">
     <span class="eyebrow">Federal construction contracts</span>
-    <h1>Fee schedule.</h1>
-    <p class="lede">Federal engagements are quoted as flat fees, agreed in writing before work starts. Publishing them
-      is deliberate: you should know what a protest costs before you decide whether to file one.</p>
+    <h1>Fee schedule</h1>
+    <p class="lede">Federal matters are billed at flat fees, confirmed in a written engagement letter before work
+      begins.</p>
   </div></div>
 
   <section><div class="w">
     <div class="sec-head">
       <span class="eyebrow">Flat fees</span>
-      <h2>Engagements</h2>
-      <p>Each fee covers the scope stated and nothing beyond it. Filing fees and disbursements are billed at cost.</p>
+      <h2>Matter fees</h2>
+      <p>Each fee covers only the scope described. Filing fees and costs are billed at cost.</p>
     </div>
     <div class="fees">
       <div class="fee"><span class="nm">Protest viability screen</span><span class="pr">$950</span>
-        <span class="ex">Written answer within 48 hours on whether a protest is worth filing. Credited in full against an agency-level or GAO protest engagement.</span></div>
+        <span class="ex">Written assessment within 48 hours of whether a protest should be filed. Credited in full toward an agency-level or GAO protest.</span></div>
       <div class="fee"><span class="nm">Agency-level protest</span><span class="pr">$7,500</span>
-        <span class="ex">Through the agency decision. Half is credited toward a subsequent GAO protest on the same procurement.</span></div>
+        <span class="ex">Through the agency's decision. Half is credited toward a GAO protest on the same procurement.</span></div>
       <div class="fee"><span class="nm">GAO protest</span><span class="pr">$18,500</span>
-        <span class="ex">Through comments on the agency report. Excludes supplemental protest grounds, hearings, proceedings at the Court of Federal Claims, and the $500 GAO filing fee.</span></div>
-      <div class="fee"><span class="nm">Size or status protest defense</span><span class="pr">$9,500</span>
-        <span class="ex">Response and supporting record through the area office or VA OSDBU determination. Excludes appeal to SBA OHA.</span></div>
+        <span class="ex">Through comments on the agency report. Does not include supplemental protests, hearings, Court of Federal Claims proceedings or the $500 GAO filing fee.</span></div>
+      <div class="fee"><span class="nm">Size or status protest</span><span class="pr">$9,500</span>
+        <span class="ex">Through the SBA area office size determination or the OHA status decision. Does not include appeals.</span></div>
       <div class="fee"><span class="nm">Cure notice or show cause response</span><span class="pr">$4,500</span>
-        <span class="ex">Prepared within 72 hours. Excludes appeal of a termination for default.</span></div>
+        <span class="ex">Delivered within 72 hours. Does not include appeal of a default termination.</span></div>
       <div class="fee"><span class="nm">Request for equitable adjustment</span><span class="pr">$14,500&ndash;38,000</span>
-        <span class="ex">Quoted by claim size and complexity, including entitlement narrative and quantum presentation. Excludes claim certification and appeal.</span></div>
+        <span class="ex">Priced by claim size and complexity. Includes the entitlement and quantum sections. Does not include a certified claim or appeal.</span></div>
       <div class="fee"><span class="nm">Certified claim under the CDA</span><span class="pr">$11,500</span>
-        <span class="ex">Certification and submission through the contracting officer's final decision. Excludes appeal.</span></div>
+        <span class="ex">Preparation and submission through the contracting officer's final decision. Does not include appeal.</span></div>
       <div class="fee"><span class="nm">ASBCA or CBCA appeal</span><span class="pr">$45,000</span>
-        <span class="ex">Notice of appeal through hearing, including discovery and briefing. Excludes appeal to the Federal Circuit.</span></div>
+        <span class="ex">Notice of appeal through hearing, including discovery and briefing. Does not include appeal to the Federal Circuit.</span></div>
       <div class="fee"><span class="nm">VetCert recertification review</span><span class="pr">$1,500</span>
-        <span class="ex">Document review and filing under 13 C.F.R. Part 128. Excludes appeal to SBA OHA.</span></div>
+        <span class="ex">Document review and filing under 13 C.F.R. Part 128. Does not include OHA appeals.</span></div>
       <div class="fee"><span class="nm">SDVOSB joint venture agreement</span><span class="pr">$7,500</span>
-        <span class="ex">Drafting and compliance review under 13 C.F.R. &sect; 125.8 for New York matters. Excludes entity formation and state filings.</span></div>
+        <span class="ex">Drafting and compliance review under 13 C.F.R. &sect; 125.8. Does not include entity formation or state filings.</span></div>
     </div>
 
     <div class="sec-head" style="margin-top:60px">
       <span class="eyebrow">Monthly counsel</span>
-      <h2>Standing engagements</h2>
-      <p>For contractors who would rather have the call before the problem than after it. Month to month, cancellable
-         on thirty days' notice.</p>
+      <h2>Monthly plans</h2>
+      <p>Month to month. Cancel on 30 days' notice.</p>
     </div>
     <div class="tiers">
       <div class="tier"><div class="nm">Watch</div><div class="pr">$650<span> / month</span></div>
-        <p>Solicitation clause reviews and VetCert status tracking, with written answers to discrete questions.</p></div>
+        <p>Clause review on solicitations, VetCert status tracking and written answers to specific questions.</p></div>
       <div class="tier"><div class="nm">Counsel</div><div class="pr">$1,850<span> / month</span></div>
-        <p>Adds unlimited email counsel on live procurements and a quarterly protest and eligibility screen.</p></div>
+        <p>Everything in Watch, plus unlimited email counsel on active procurements and a quarterly protest and eligibility review.</p></div>
       <div class="tier"><div class="nm">Outside GC</div><div class="pr">$4,500<span> / month</span></div>
-        <p>Adds teaming agreement, joint venture and subcontract review, and standing availability on deadline matters.</p></div>
+        <p>Everything in Counsel, plus review of teaming agreements, joint ventures and subcontracts, and priority on deadline matters.</p></div>
     </div>
 
-    <p class="note" style="margin-top:34px">Fees are earned as work is performed and are not nonrefundable; any unearned
-       portion is refunded. Engagements are confirmed in a written letter under 22 N.Y.C.R.R. Part 1215 before work begins,
-       and fee disputes may be submitted to arbitration under Part 137. Flat fees do not apply to contingency arrangements,
-       which are unavailable for costs claimed under FAR 31.205-33.</p>
+    <p class="note" style="margin-top:34px">Fees are earned as work is performed. Any unearned portion is refunded.
+       Engagements are confirmed by a written letter under 22 N.Y.C.R.R. Part 1215, and fee disputes may be arbitrated
+       under Part 137.</p>
   </div></section>
 
   <section style="padding-top:0"><div class="w">
     <div class="intake">
       <div class="txt">
         <span class="eyebrow">Next step</span>
-        <h3 style="margin-top:10px;font-size:22px">Send the intake form</h3>
-        <p>Five minutes, one page. Conflicts are cleared before any confidential detail is discussed.</p>
+        <h3 style="margin-top:10px;font-size:22px">Intake form</h3>
+        <p>One page, about five minutes. Conflicts are cleared before any confidential information is discussed.</p>
       </div>
       <a class="btn solid" href="/federal/Mac-Law-Matter-Intake.pdf" download>Download the intake form</a>
     </div>
@@ -276,14 +267,14 @@ footer a{color:#D5DBE7}
     <a href="/federal/">Federal construction</a>
     <a href="/federal/fees/">Fee schedule</a>
     <a href="/federal/Mac-Law-Matter-Intake.pdf">Intake form (PDF)</a>
-    <a href="mailto:Mseeber@maclawny.com">Mseeber@maclawny.com</a>
+    <a href="mailto:info@maclawny.com">info@maclawny.com</a>
     <a href="tel:+15183391209">(518) 339-1209</a>
   </div>
   <p><strong style="color:#D5DBE7">Attorney Advertising.</strong> Mac Law, PLLC &middot; Matthew Seeber, admitted in New York &middot;
-     P.O. Box 13, Mamaroneck, NY 10543. Practice before the Government Accountability Office, the boards of contract appeals
-     and federal agencies nationwide; matters governed by other states' law are handled with local counsel.</p>
-  <p>This website is for general information. It is not legal advice, and no attorney-client relationship is formed by
-     sending an inquiry or an intake form. Representation begins only when a written engagement letter is signed by both of us.
+     P.O. Box 13, Mamaroneck, NY 10543 &middot; (518) 339-1209. Federal matters are handled before GAO, the boards of
+     contract appeals and federal agencies. Matters governed by the law of another state are handled with local counsel.</p>
+  <p>This website provides general information, not legal advice. Contacting the firm or sending an intake form does not
+     create an attorney-client relationship. Representation begins when a written engagement letter is signed.
      Prior results do not guarantee a similar outcome.</p>
   <p>&copy; 2026 Mac Law, PLLC. All rights reserved.</p>
 </div></footer>
